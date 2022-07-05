@@ -1,9 +1,10 @@
+// gsap timeline
 
 const tl = gsap.timeline({default: {duration: 0.15}})
 const containers = document.querySelectorAll(".input-container");
 const form = document.querySelector("form");
 
-// const tl = gsap.timeline({ defaults: { duration: 1 } });
+
 // home page animation
 tl.fromTo('.cta1' , {x:-110, opacity: 0}, {x: 0, opacity: 1});
 tl.fromTo('.cta2' , {x:110, opacity: 0}, {x: 0, opacity: 1});
@@ -12,11 +13,7 @@ tl.fromTo('.cta4' , {x:180, opacity: 0}, {x: 0, opacity: 1});
 tl.fromTo('.cta-text-a', {opacity: 0}, {opacity: 1});
 tl.fromTo('.homepicc' , {x:-180, opacity: 0}, {x: 0, opacity: 1}, '<');
 tl.fromTo('.deliveryy' , {x:180, opacity: 0}, {x: 0, opacity: 1}, '<');
-//Line
-const start =
-  "M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512";
-const end =
-  "M1 0.999512C1 0.999512 61.5 7.5 151 7.5C240.5 7.5 301 0.999512 301 0.999512";
+
 
 //Elastic Effect
 containers.forEach((container) => {

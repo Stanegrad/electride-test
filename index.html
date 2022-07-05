@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Document</title>
+    <title>Electride</title>
     <link rel="stylesheet" href="style.css">
      <!-- Google font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- nav bar section -->
+    
     <nav>
         <label class="logo-pic">
             <img class="logopic" src="image/ride_img.png">
@@ -26,6 +28,7 @@
                 </ul>
             </div>
         </div>
+        <!-- nav bar for mobile responsive  -->
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -39,6 +42,8 @@
         </div>
     </nav>
     
+    <!-- home section -->
+
     <section class="home" id="home">
         <div class="cta">
             <div class="cta-text">
@@ -64,6 +69,9 @@
             </div>
         </div>
     </section>
+
+    <!-- about section -->
+
     <section class="about" id="about">
         <div class="about-heading">
             <h3>Why Electride?</h3>
@@ -77,6 +85,9 @@
             </div>
         </div> 
     </section>
+
+    <!-- service section -->
+
     <section class="service" id="service">
             <div class="service-heading">
                 <h3>Services</h3>
@@ -94,18 +105,21 @@
                     </div>
                 </div>
     </section>
+
+    <!-- contact form section -->
+
     <section class="formdiv" id="contact">
       <div class="login-box contact-form">
           <h2>Contact Us</h2>
           <form name="contact" method="POST" data-netlify="true">
           <div class="maindiv">
               <div class="user-box">
-              <input type="text" name="name" required="">
-              <label>Full Name</label>
+                    <input type="text" name="name" required="">
+                    <label>Full Name</label>
               </div>
               <div class="user-box">
-              <input type="text" name="tel" required="">
-              <label>Mobile No</label>
+                    <input type="text" name="tel" required="">
+                    <label>Mobile No</label>
               </div>
               <div class="user-box">
                   <input type="email" name="email" required="">
@@ -116,12 +130,15 @@
                   <label>Enquiry</label>
               </div>
               <button class="grow_skew_forward" type="submit" role="button">
-               Contact     
+                Contact     
               </button>
           </div>
           </form>
       </div>
-  </section>
+    </section>
+
+    <!-- footer section -->
+
     <section class="footer">
       <div class="footer-heading">
         <h2>Follow us on</h2>
@@ -137,11 +154,11 @@
         Electride is proudly made in India 🇮🇳
       </div>
     </section>
+
+    <!-- script and gsap link -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-
-    
-    
     <script src="./app.js"></script> 
 </body>
 </html>
